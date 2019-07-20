@@ -6,7 +6,6 @@ add_subdirectory( wasm-jit )
 add_subdirectory( appbase )
 add_subdirectory( chain )
 add_subdirectory( testing )
-add_subdirectory( eos-vm )
 
 #turn tools&tests off; not needed for library build
 set(BUILD_TESTS OFF CACHE BOOL "Build GTest-based tests")
@@ -14,6 +13,7 @@ set(BUILD_TOOLS OFF CACHE BOOL "Build wabt tools")
 set(RUN_RE2C OFF CACHE BOOL "Run re2c")
 set(WITH_EXCEPTIONS ON CACHE BOOL "Build with exceptions enabled" FORCE)
 add_subdirectory( wabt )
+add_subdirectory( eos-vm )
 
 set(ENABLE_STATIC ON)
 set(CMAKE_MACOSX_RPATH OFF)
